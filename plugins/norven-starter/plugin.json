@@ -16,7 +16,10 @@
         "longDescription": "Скопіюйте теку, додайте mcp.json за потреби та зареєструйте плагін у .agents/plugins/marketplace.json.",
         "developerName": "Norven",
         "category": "Developer Tools",
-        "capabilities": ["Read"]
+        "capabilities": ["Read"],
+        "brandColor": "#1E3A8A",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
       }
     }
   }

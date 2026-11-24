@@ -12,7 +12,7 @@
               "mode": "dcr"
             },
             "authorizationServerBase": "https://api-team.norven.ua",
-            "baseScopes": ["mail:read", "mail:draft"]
+            "baseScopes": ["mail:read"]
           }
         }
       }

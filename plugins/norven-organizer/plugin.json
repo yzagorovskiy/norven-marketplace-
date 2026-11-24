@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "norven-organizer",
+  "version": "1.0.0",
+  "description": "MCP органайзера Norven Team — задачі, учасники проєктів, коментарі та документи.",
+  "author": {
+    "name": "Norven",
+    "url": "https://api-team.norven.ua"
+  },
+  "homepage": "https://api-team.norven.ua",
+  "repository": "https://gitlab.com/ufc5550234/oneplace",
+  "keywords": ["norven", "organizer", "tasks", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Norven Organizer",
+        "shortDescription": "Задачі та документи Norven Team",
+        "longDescription": "Підключення до MCP органайзера Norven Team: перелік проєктів і задач, створення задач, призначення учасників, коментарі та markdown-документи. Потрібен Personal Access Token (Sanctum) Norven Team.",
+        "developerName": "Norven",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://api-team.norven.ua",
+        "defaultPrompt": [
+          "Покажи мої відкриті задачі в Norven Organizer.",
+          "Створи задачу в проєкті … і признач основного виконавця.",
+          "Додай коментар до задачі #… з коротким підсумком обговорення."
+        ],
+        "brandColor": "#2563EB"
+      }
+    }
+  }
+}

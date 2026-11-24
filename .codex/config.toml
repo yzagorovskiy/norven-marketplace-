@@ -1,0 +1,6 @@
+# Увімкніть потрібні плагіни для цього репозиторію (ім'я плагіна@ім'я маркетплейсу).
+# [plugins."norven-mail@norven-plugins"]
+# enabled = true
+#
+# [plugins."norven-organizer@norven-plugins"]
+# enabled = true

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "norven-mail": {
+      "type": "streamable-http",
+      "url": "https://mail.norven.ua/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            },
+            "authorizationServerBase": "https://api-team.norven.ua",
+            "baseScopes": ["mail:read", "mail:draft"]
+          }
+        }
+      }
+    }
+  }
+}

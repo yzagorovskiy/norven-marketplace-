@@ -1,0 +1,47 @@
+{
+  "name": "norven-plugins",
+  "interface": {
+    "displayName": "Norven Plugins"
+  },
+  "plugins": [
+    {
+      "name": "norven-mail",
+      "description": "Пошта Norven (Zimbra): листи, чернетки, вкладення, розмови. OAuth через Norven Team.",
+      "source": {
+        "source": "local",
+        "path": "./plugins/norven-mail"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Communication"
+    },
+    {
+      "name": "norven-organizer",
+      "description": "Органайзер Norven Team: задачі, призначення, коментарі та документи в проєктах.",
+      "source": {
+        "source": "local",
+        "path": "./plugins/norven-organizer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "norven-starter",
+      "description": "Шаблон skill-плагіна без MCP — основа для власних Norven-плагінів.",
+      "source": {
+        "source": "local",
+        "path": "./plugins/norven-starter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

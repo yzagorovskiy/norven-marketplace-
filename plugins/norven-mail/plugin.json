@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "norven-mail",
+  "version": "1.2.0",
+  "description": "Norven Mail — читання пошти та робота з чернетками через MCP (Streamable HTTP).",
+  "author": {
+    "name": "Norven",
+    "url": "https://mail.norven.ua"
+  },
+  "homepage": "https://mail.norven.ua",
+  "repository": "https://gitlab.com/ufc5550234/mail-norven",
+  "keywords": ["norven", "mail", "zimbra", "email", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Norven Mail",
+        "shortDescription": "Пошта Norven у ChatGPT і Codex",
+        "longDescription": "Підключення до поштової скриньки Norven (https://mail.norven.ua): перегляд листів і папок, розмови, вкладення, чернетки. OAuth через Norven Team (scopes mail:read, mail:draft).",
+        "developerName": "Norven",
+        "category": "Communication",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://mail.norven.ua",
+        "defaultPrompt": [
+          "Покажи непрочитані листи за останній тиждень у Norven Mail.",
+          "Підготуй чернетку відповіді на останній лист у розмові.",
+          "Знайди у пошті листи з вкладеннями від відправника …"
+        ],
+        "brandColor": "#1E3A5F"
+      }
+    }
+  }
+}

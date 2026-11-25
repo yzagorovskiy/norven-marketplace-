@@ -12,7 +12,7 @@ description: Підключення та перевірка Norven Mail післ
 
 Якщо авторизація не вдалася:
 
-- **До екрана згоди**, помилка `redirect_uri має бути https`: Codex/ChatGPT реєструє **http://127.0.0.1:&lt;порт&gt;/…** (RFC 8252). Це не налаштовується в плагіні. На **api-team.norven.ua** має бути викладено OAuth з підтримкою loopback (DCR приймає http на 127.0.0.1/localhost). Стара версія Team відхиляє такий redirect і OAuth не стартує.
+- **До екрана згоди**, помилка `redirect_uri має бути https`: Codex/ChatGPT реєструє **http://127.0.0.1 зі змінним портом** (RFC 8252). Це не налаштовується в плагіні. На **api-team.norven.ua** має бути викладено OAuth з підтримкою loopback (DCR приймає http на 127.0.0.1/localhost). Стара версія Team відхиляє такий redirect і OAuth не стартує.
 - **Після згоди**, `tools/list` → **401**: перевірити на пошті introspection до Team (`MCP_TOKEN_INTROSPECTION_URL`) і що в OAuth видано scope `mail:read`; скринька прив’язана до norven_id (перевірка mailbox перед кодом).
 - Скринька в браузері на mail.norven.ua **не доводить**, що MCP підключено — потрібен окремий успішний OAuth.
 
